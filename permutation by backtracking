@@ -1,0 +1,18 @@
+print("permutaion by backtracking")
+def perm(list):
+    if len(list) == 0:
+        return []
+    elif len(list) == 1:
+        return [list]
+    else:
+        l = []
+        for i in range(len(list)):
+            x = list[i]
+            xs = list[:i] + list[i+1:]
+            for p in perm(xs):
+                l.append([x]+p)
+        return l
+
+list = [1,2,3]
+for p in perm(list):
+    print(p)

@@ -1,0 +1,67 @@
+print("UVA live 6802:: Turtle Graphics")
+path = [1,1,1,0,1,1,1,0,1,1,0,1,1,1,1]
+print(path)
+start_pos = [2,2]
+
+def find_zero(L):
+	for i in range(len(L)):
+		if L[i] == 0:
+			return i
+	return None
+L = []
+
+
+a = find_zero(path)
+path1 = path[0:a]
+print(path1)
+x = path1.count(1)
+print(x)
+first_pos = [start_pos[0],start_pos[1]+x]
+print(first_pos)
+
+path2 = path[a+1:]
+print(path2)
+
+b = find_zero(path2)
+print(b)
+
+path3 = path2[0:b]
+print(path3)
+
+y = path3.count(1)
+print(y)
+
+second_pos = [first_pos[0]+y,first_pos[1]]
+print(second_pos)
+
+
+path4 = path2[b+1:]
+print(path4)
+
+c = find_zero(path4)
+print(c)
+
+path5 = path4[0:c]
+print(path5)
+
+z = path5.count(1)
+print(z)
+
+third_pos = [second_pos[0],second_pos[1]-z]
+
+print(third_pos)
+
+path6 = path4[c+1:]
+print(path6)
+
+d = find_zero(path6)
+print(d)
+
+path7 = path6[0:]
+print(path7)
+
+t = path7.count(1)
+print(t)
+
+final_pos = [third_pos[0]-t,third_pos[1]]
+print(final_pos)

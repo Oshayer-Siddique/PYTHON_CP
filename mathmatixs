@@ -1,0 +1,25 @@
+print(slope(Lj,Li))
+
+print("LCM and GCD")
+def lcm(x,y):
+	if x>y:
+		L = x
+	else:
+		L = y
+	while(True):
+		if(L%x==0 and L%y==0):
+			break
+		else:
+			L = L + 1
+	return L
+
+def product(x,y):
+	return x*y
+
+def gcd(x,y):
+	return product(x,y)/lcm(x,y)
+
+x = int(input("x = "))
+y = int(input("y = "))
+print(lcm(x,y))
+print(gcd(x,y))

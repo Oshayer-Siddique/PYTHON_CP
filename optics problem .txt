@@ -1,0 +1,12 @@
+1/fa = (1.5-1)(2/r)
+4 = 0.5(2/r)
+8 = (2/r)
+wUg = Ug/Uw
+r = fa = 25 cm
+Ua/u + Ug/v' = (Ug-Ua)/r.....(1)
+-Ug/v'+ Uw/v = (Uw-Ug)/r...(2)
+(1+2)==
+Ua/u + Uw/v = (Uw-Ua)/r
+1/fw = (Uw-Ua)/r[special formula]
+fw = r/(Uw-Ua)
+fw = 25/(1.333333-1)

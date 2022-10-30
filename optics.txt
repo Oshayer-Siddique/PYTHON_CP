@@ -1,0 +1,8 @@
+fo = 2
+fe = 5
+vo+ue = 10
+m = (1-vo/fo)(1+25/fe)
+(1/ue)-1/25 = 1/2
+ue = 50/27
+vo = 10-(50/27)
+pore calculation kor
